@@ -1,40 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PictureGram Documentation
+
+This is the documentation for the Image Gallery project, which is designed to showcase a collection of images in an aesthetically pleasing manner. Users can log in to the gallery, rearrange images using drag-and-drop functionality, and search for images based on tags. This documentation will guide you through the setup, usage, and features of the project.
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Authentication](#authentication)
+- [Image Display](#image-display)
+- [Loading State](#loading-state)
+- [Search Functionality](#search-functionality)
+- [Drag-and-Drop](#drag-and-drop)
+- [User-friendly Feedback](#user-friendly-feedback)
+- [Responsive Design](#responsive-design)
+- [Design Flexibility](#design-flexibility)
+- [Link To Live Website](#link-to-live-website)
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm installed on your development machine.
+- A Firebase account (for authentication and storage) or any other authentication solution you prefer.
+- Basic knowledge of React or Next.js.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Image Gallery project, follow these steps:
+
+clone the project repository from [GitHub](https://github.com/Promisead/hng-stage3-task.git).
+
+```bash
+git clone https://github.com/Promisead/hng-stage3-task.git
+cd hng-gallerydnd
+```
+
+Install project dependencies.
+
+```bash
+npm install
+```
+
+Create a Firebase project and configure it for authentication and storage. Update the Firebase configuration in your project.
+
+Run the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to http://localhost:3000 to access the Image Gallery.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Authentication
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Simple Authentication
+The project implements a simple authentication system. Users can log in with the following credentials:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Username: user@example.com
+Password: 1Password
+You can customize the authentication system further by integrating solutions like NextAuth, Auth0, Clerk, or any other preferred authentication method.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Validation and Error Handling
+The authentication form fields include proper validation and error messages to ensure a user-friendly experience.
 
-## Learn More
+## Image Display
 
-To learn more about Next.js, take a look at the following resources:
+The image gallery displays a grid layout that showcases a collection of images with consistent spacing and sizing. Each image is tagged for easy identification.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Loading State
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+When the page is loading or images are not ready for display, a loading state is shown to users. This can be a skeleton loader or a loading spinner.
 
-## Deploy on Vercel
+## Search Functionality
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project includes a search field that allows users to filter the image list based on the tags assigned to the images. This makes it easy to find specific images within the gallery.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Drag-and-Drop
+
+The core feature of the Image Gallery project is the drag-and-drop functionality. Authenticated users can select and drag images, effortlessly rearranging them within the gallery.
+
+## User-friendly Feedback
+
+The project incorporates smooth animations and visual cues that provide feedback during drag-and-drop interactions. This enhances the user experience and makes the process more intuitive.
+
+## Responsive Design
+
+The Image Gallery is designed to be responsive and functions seamlessly on various devices, including desktop screens, tablets, and mobile phones. It adapts to different screen sizes and orientations.
+
+## Design Flexibility
+
+While adhering to the project's requirements, you have the creative freedom to come up with a unique and appealing design. Feel free to customize the look and feel of the gallery to make it visually engaging.
+
+## Link to live website
+
+https://hng-stage3-task.vercel.app/

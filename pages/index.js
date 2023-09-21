@@ -87,7 +87,7 @@ export default function Home() {
                   Login to your account
                 </div>
                 <div style={{ fontSize: 16, color: "gray" }}>
-                  access amazing images for free
+                  and drag n drop images
                 </div>
                 <br />
                 <div
@@ -137,7 +137,7 @@ export default function Home() {
                   }}
                 >
                   <div>
-                    Not Registered Yet?{" "}
+                    Not Registered ?{" "}
                     <span style={{ color: "#7F265B" }}>
                       <a href="#">Create an account</a>
                     </span>
