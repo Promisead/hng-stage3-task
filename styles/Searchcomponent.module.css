@@ -1,0 +1,25 @@
+.searchContainer {
+    /* border: 1px solid greenyellow; */
+    border: 1px dotted black;
+    display: flex;
+
+    align-items: center;
+    /* float: left; */
+    min-width: 200px;
+    min-height: 200px;
+    justify-content: center;
+}
+.searchItem {
+    /* float: left; */
+    min-height: 30;
+    list-style: none;
+    display: flex;
+    cursor: move;
+    background: #fff;
+    /* border-radius: 5px; */
+    padding: 10px 13px;
+    margin-bottom: 11px;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.06); */
+    /* border: 1px solid #ccc; */
+    /* justify-content: space-between; */
+}
